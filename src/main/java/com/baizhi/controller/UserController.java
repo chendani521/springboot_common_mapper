@@ -9,17 +9,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.List;
 
-
-
-
-
-
-
-
-
-
-
-
 @Controller
 @RequestMapping("/user")
 @Log4j/*程序中直接打印log.info(),log.debug()即可*/
