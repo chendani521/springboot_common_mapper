@@ -1,0 +1,28 @@
+server:
+  port: 7067
+  context-path: /springboot_Day1
+  jsp-servlet:
+    init-parameters:
+      development: true
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:oracle:thin:@127.0.0.1:1521:XE
+    driver-class-name: oracle.jdbc.OracleDriver
+    username: hr
+    password: lichen
+
+  mvc:
+    view:
+      prefix: /
+      suffix: .jsp
+
+  http:
+    multipart:
+      max-file-size: 10mb
+      max-request-size: 100mb
+  profiles:
+    active: product
+
+
+
